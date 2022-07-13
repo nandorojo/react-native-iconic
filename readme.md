@@ -4,9 +4,7 @@
 ```ts
 import { AnnotationDots } from '@nandorojo/iconic'
 
-export function Icon() {
-  return <AnnotationDots />
-}
+export const Icon = () => <AnnotationDots />
 ```
 
 ## Overview
