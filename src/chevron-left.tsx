@@ -2,9 +2,7 @@
 // https://fernandorojo.co
 import * as React from "react";
 import Svg, { SvgProps, Path } from "react-native-svg";
-import { Ref, forwardRef } from "react";
 
-const ChevronLeft = (props: SvgProps, ref: Ref<SVGSVGElement>) => <Svg width={24} height={24} fill="none" viewBox="0 0 24 24" ref={ref} {...props}><Path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13.25 8.75L9.75 12L13.25 15.25" /></Svg>;
+const ChevronLeft = (props: SvgProps) => <Svg width={24} height={24} fill="none" viewBox="0 0 24 24" {...props}><Path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13.25 8.75L9.75 12L13.25 15.25" /></Svg>;
 
-const ForwardRef = forwardRef(ChevronLeft);
-export default ForwardRef;
+export default ChevronLeft;

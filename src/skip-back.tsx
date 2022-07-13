@@ -2,9 +2,7 @@
 // https://fernandorojo.co
 import * as React from "react";
 import Svg, { SvgProps, Path } from "react-native-svg";
-import { Ref, forwardRef } from "react";
 
-const SkipBack = (props: SvgProps, ref: Ref<SVGSVGElement>) => <Svg width={24} height={24} fill="none" viewBox="0 0 24 24" ref={ref} {...props}><Path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 12L18.25 5.75V18.25L9.75 12Z" /><Path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5.75 5.75V18.25" /></Svg>;
+const SkipBack = (props: SvgProps) => <Svg width={24} height={24} fill="none" viewBox="0 0 24 24" {...props}><Path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 12L18.25 5.75V18.25L9.75 12Z" /><Path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5.75 5.75V18.25" /></Svg>;
 
-const ForwardRef = forwardRef(SkipBack);
-export default ForwardRef;
+export default SkipBack;

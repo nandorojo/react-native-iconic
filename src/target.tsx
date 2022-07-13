@@ -2,9 +2,7 @@
 // https://fernandorojo.co
 import * as React from "react";
 import Svg, { SvgProps, Circle } from "react-native-svg";
-import { Ref, forwardRef } from "react";
 
-const Target = (props: SvgProps, ref: Ref<SVGSVGElement>) => <Svg width={24} height={24} fill="none" viewBox="0 0 24 24" ref={ref} {...props}><Circle cx={12} cy={12} r={7.25} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} /><Circle cx={12} cy={12} r={4.25} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} /><Circle cx={12} cy={12} r={1.25} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} /></Svg>;
+const Target = (props: SvgProps) => <Svg width={24} height={24} fill="none" viewBox="0 0 24 24" {...props}><Circle cx={12} cy={12} r={7.25} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} /><Circle cx={12} cy={12} r={4.25} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} /><Circle cx={12} cy={12} r={1.25} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} /></Svg>;
 
-const ForwardRef = forwardRef(Target);
-export default ForwardRef;
+export default Target;

@@ -2,9 +2,7 @@
 // https://fernandorojo.co
 import * as React from "react";
 import Svg, { SvgProps, Path } from "react-native-svg";
-import { Ref, forwardRef } from "react";
 
-const Crop = (props: SvgProps, ref: Ref<SVGSVGElement>) => <Svg width={24} height={24} fill="none" viewBox="0 0 24 24" ref={ref} {...props}><Path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.75 7.75H15.25C15.8023 7.75 16.25 8.19772 16.25 8.75V19.25" /><Path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.25 16.25H8.75C8.19772 16.25 7.75 15.8023 7.75 15.25V4.75" /></Svg>;
+const Crop = (props: SvgProps) => <Svg width={24} height={24} fill="none" viewBox="0 0 24 24" {...props}><Path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.75 7.75H15.25C15.8023 7.75 16.25 8.19772 16.25 8.75V19.25" /><Path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.25 16.25H8.75C8.19772 16.25 7.75 15.8023 7.75 15.25V4.75" /></Svg>;
 
-const ForwardRef = forwardRef(Crop);
-export default ForwardRef;
+export default Crop;

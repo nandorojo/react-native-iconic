@@ -2,9 +2,7 @@
 // https://fernandorojo.co
 import * as React from "react";
 import Svg, { SvgProps, Path } from "react-native-svg";
-import { Ref, forwardRef } from "react";
 
-const ArrowUpRight = (props: SvgProps, ref: Ref<SVGSVGElement>) => <Svg width={24} height={24} fill="none" viewBox="0 0 24 24" ref={ref} {...props}><Path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.25 15.25V6.75H8.75" /><Path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 7L6.75 17.25" /></Svg>;
+const ArrowUpRight = (props: SvgProps) => <Svg width={24} height={24} fill="none" viewBox="0 0 24 24" {...props}><Path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.25 15.25V6.75H8.75" /><Path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 7L6.75 17.25" /></Svg>;
 
-const ForwardRef = forwardRef(ArrowUpRight);
-export default ForwardRef;
+export default ArrowUpRight;

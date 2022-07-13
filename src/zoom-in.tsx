@@ -2,9 +2,7 @@
 // https://fernandorojo.co
 import * as React from "react";
 import Svg, { SvgProps, Circle, Path } from "react-native-svg";
-import { Ref, forwardRef } from "react";
 
-const ZoomIn = (props: SvgProps, ref: Ref<SVGSVGElement>) => <Svg width={24} height={24} fill="none" viewBox="0 0 24 24" ref={ref} {...props}><Circle cx={11} cy={11} r={6.25} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} /><Path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15.5 15.5L19.25 19.25" /><Path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11 8.75V13.25" /><Path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13.25 11L8.75 11" /></Svg>;
+const ZoomIn = (props: SvgProps) => <Svg width={24} height={24} fill="none" viewBox="0 0 24 24" {...props}><Circle cx={11} cy={11} r={6.25} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} /><Path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15.5 15.5L19.25 19.25" /><Path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11 8.75V13.25" /><Path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13.25 11L8.75 11" /></Svg>;
 
-const ForwardRef = forwardRef(ZoomIn);
-export default ForwardRef;
+export default ZoomIn;

@@ -2,9 +2,7 @@
 // https://fernandorojo.co
 import * as React from "react";
 import Svg, { SvgProps, Rect, Path } from "react-native-svg";
-import { Ref, forwardRef } from "react";
 
-const Code = (props: SvgProps, ref: Ref<SVGSVGElement>) => <Svg width={24} height={24} fill="none" viewBox="0 0 24 24" ref={ref} {...props}><Rect width={14.5} height={14.5} x={4.75} y={4.75} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} rx={2} /><Path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8.75 10.75L11.25 13L8.75 15.25" /></Svg>;
+const Code = (props: SvgProps) => <Svg width={24} height={24} fill="none" viewBox="0 0 24 24" {...props}><Rect width={14.5} height={14.5} x={4.75} y={4.75} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} rx={2} /><Path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8.75 10.75L11.25 13L8.75 15.25" /></Svg>;
 
-const ForwardRef = forwardRef(Code);
-export default ForwardRef;
+export default Code;

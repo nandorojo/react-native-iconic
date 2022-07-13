@@ -27,7 +27,7 @@ const run = async () => {
         svg,
         {
           native: true,
-          ref: true,
+          ref: false,
           expandProps: 'end',
           typescript: true,
           svgProps: {},

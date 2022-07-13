@@ -2,9 +2,7 @@
 // https://fernandorojo.co
 import * as React from "react";
 import Svg, { SvgProps, Circle, Path } from "react-native-svg";
-import { Ref, forwardRef } from "react";
 
-const Clock = (props: SvgProps, ref: Ref<SVGSVGElement>) => <Svg width={24} height={24} fill="none" viewBox="0 0 24 24" ref={ref} {...props}><Circle cx={12} cy={12} r={7.25} stroke="currentColor" strokeWidth={1.5} /><Path stroke="currentColor" strokeWidth={1.5} d="M12 8V12L14 14" /></Svg>;
+const Clock = (props: SvgProps) => <Svg width={24} height={24} fill="none" viewBox="0 0 24 24" {...props}><Circle cx={12} cy={12} r={7.25} stroke="currentColor" strokeWidth={1.5} /><Path stroke="currentColor" strokeWidth={1.5} d="M12 8V12L14 14" /></Svg>;
 
-const ForwardRef = forwardRef(Clock);
-export default ForwardRef;
+export default Clock;
