@@ -1,6 +1,5 @@
 # React Native Iconic
 
-
 ```ts
 import { AnnotationDots } from '@nandorojo/iconic'
 
@@ -15,13 +14,11 @@ export const Icon = () => <AnnotationDots />
 - 🤖 TypeScript support
 - 📈 JS-only (+ works with Expo)
 
-
 ## About Iconic
 
 <a href="https://iconic.app" target="_blank">
 <img width="1792" alt="Screen Shot 2022-07-13 at 4 44 18 PM" src="https://user-images.githubusercontent.com/13172299/178855403-47b09fd7-df60-4bf0-850e-1d59072a4f35.png">
 </a>
-
 
 [Iconic](https://iconic.app/) is an awesome icon set made by [@jamesm
 ](https://twitter.com/jamesm) and [@ormanclark](https://twitter.com/@ormanclark). It has 200+ free icons and a premium plan. This library exports React Native components for each of its free icons.
@@ -70,7 +67,7 @@ For a full directory of components, see the [Iconic](https://iconic.app/c/availa
 
 ## Props
 
-Each icon component accepts all the props from `react-native-svg`'s `Svg` component. Reference their docs.
+Each icon component accepts all the props from `react-native-svg`'s `Svg` component. Reference [their docs](https://github.com/react-native-svg/react-native-svg#svg).
 
 ## How it works
 
