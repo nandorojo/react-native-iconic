@@ -21,7 +21,7 @@ Iconic has 200+ free icons and a premium plan. This repo exports React Native co
 
 ## Example
 
-See the example snack:
+See the [example snack 🍔](https://snack.expo.dev/@nandorojo/273c1f).
 
 ## Installation
 
