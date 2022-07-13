@@ -1,10 +1,5 @@
 # React Native Iconic
 
-- 😎 Free, beautiful icons
-- 🔥 Customizable with `react-native-svg` props
-- 🌲 Tree-shaken components
-- 🤖 TypeScript support
-- 📈 JS-only (+ works with Expo)
 
 ```ts
 import { AnnotationDots } from '@nandorojo/iconic'
@@ -13,6 +8,13 @@ export function Icon() {
   return <AnnotationDots />
 }
 ```
+
+- 😎 Free, beautiful icons
+- 🔥 Customizable with `react-native-svg` props
+- 🌲 Tree-shaken components
+- 🤖 TypeScript support
+- 📈 JS-only (+ works with Expo)
+
 
 <a href="https://iconic.app" target="_blank">
 <img width="1792" alt="Screen Shot 2022-07-13 at 4 44 18 PM" src="https://user-images.githubusercontent.com/13172299/178855403-47b09fd7-df60-4bf0-850e-1d59072a4f35.png">
