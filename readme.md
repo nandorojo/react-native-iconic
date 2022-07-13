@@ -3,6 +3,8 @@
 - 😎 Free, beautiful icons
 - 🔥 Customizable with `react-native-svg` props
 - 🌲 Tree-shaken components
+- 🤖 TypeScript support
+- 📈 JS-only (+ works with Expo)
 
 ```ts
 import { AnnotationDots } from '@nandorojo/iconic'
@@ -17,6 +19,10 @@ export function Icon() {
 
 Iconic has 200+ free icons and a premium plan. This repo exports React Native components for each of its free icons.
 
+## Example
+
+See the example snack:
+
 ## Installation
 
 ```sh
@@ -25,7 +31,7 @@ yarn add @nandorojo/iconic react-native-svg
 
 ## Usage
 
-Every icon is exported as its own component. The names are turned into pascal case.
+Each icon is exported as its own component with an adjusted name.
 
 For example, to use the `arrow-down` icon, import `ArrowDown`:
 
@@ -33,12 +39,26 @@ For example, to use the `arrow-down` icon, import `ArrowDown`:
 import { ArrowDown } from '@nandorojo/iconic'
 ```
 
-For a full directory of components, see the [Iconic](https://iconic.app/c/availability/free) website.
-
-### Customize color
+You can also `import * as Iconic`:
 
 ```tsx
-<ArrowUp stroke="#fff500" />
+import * as Iconic from '@nandorojo/iconic'
+
+export const Icon = () => <Iconic.ArrowDown />
+```
+
+For a full directory of components, see the [Iconic](https://iconic.app/c/availability/free) website.
+
+### Custom color
+
+```tsx
+<ArrowUp color="black" />
+```
+
+### Custom size
+
+```tsx
+<ArrowUp height={30} width={30} />
 ```
 
 ## Props
