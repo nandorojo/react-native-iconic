@@ -1,4 +1,4 @@
-# React Native Iconic
+# 🎨 React Native Iconic
 
 ```ts
 import { AnnotationDots } from '@nandorojo/iconic'
