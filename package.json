@@ -9,7 +9,7 @@
   "name": "@nandorojo/iconic",
   "version": "0.0.1",
   "main": "lib/commonjs/index.js",
-  "react-native": "src/index.tsx",
+  "react-native": "src/index.ts",
   "module": "lib/module/index.js",
   "types": "lib/typescript/src/index.d.ts",
   "scripts": {
